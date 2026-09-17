@@ -1,0 +1,19 @@
+#product-delivery { width: 100%; max-width: 1000px; margin: auto; padding: 80px 0; min-width: 0; }
+.delivery-grid { display: grid; width: 100%; max-width: 100%; gap: 30px; min-width: 0; }
+.delivery-card { width: 100%; max-width: 100%; background: var(--light-navy); border-radius: 16px; padding: 30px; overflow: hidden; min-width: 0; box-sizing: border-box; }
+.delivery-copy { width: 100%; max-width: 620px; margin-bottom: 22px; }
+.delivery-copy h3 { color: var(--lightest-slate); font-size: 34px; margin: 0 0 8px; }
+.delivery-copy p { color: var(--slate); font-size: 19px; line-height: 1.45; margin: 0 0 15px; }
+.delivery-copy span { color: var(--green-bright); font-size: 14px; }
+.scroll-hint { color: var(--green-bright); font-size: 14px; margin: 0 0 5px; }
+.scroll-hint b { font-size: 20px; margin-left: 5px; }
+.delivery-images { display: flex; gap: 13px; align-items: center; overflow-x: auto; padding: 12px 2px 5px; }
+.delivery-images img { box-shadow: 0 8px 22px rgba(0,0,0,.35); flex: 0 0 auto; object-fit: contain; background: #fff; }
+.reconxi .delivery-images { display: flex; flex-direction: row; align-items: center; width: 620px; max-width: 100%; overflow-x: scroll; overflow-y: hidden; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding: 12px 2px 12px; scrollbar-width: auto; scrollbar-color: var(--green-bright) var(--dark-navy); cursor: ew-resize; }
+.reconxi .delivery-images::-webkit-scrollbar { height: 10px; }
+.reconxi .delivery-images::-webkit-scrollbar-track { background: var(--dark-navy); border-radius: 20px; }
+.reconxi .delivery-images::-webkit-scrollbar-thumb { background: var(--green-bright); border-radius: 20px; }
+.reconxi .delivery-images:focus { outline: 1px solid var(--green-bright); outline-offset: 3px; }
+.reconxi .delivery-images img { width: 620px; max-width: 100%; height: 310px; flex: 0 0 620px; border-radius: 6px; scroll-snap-align: start; scroll-snap-stop: always; object-fit: contain; }
+.fitscheck .delivery-images img { height: 310px; width: auto; border-radius: 14px; }
+@media (max-width: 800px) { #product-delivery { width: 100%; max-width: 100%; padding: 60px 0; } .delivery-card { width: 100%; max-width: 100%; padding: 20px; } .delivery-copy { max-width: 100%; overflow-wrap: anywhere; } .delivery-copy h3 { font-size: 28px; } .delivery-copy p { font-size: 17px; } .delivery-images, .reconxi .delivery-images, .fitscheck .delivery-images { box-sizing: border-box; width: 100%; max-width: 100%; } .reconxi .delivery-images img { width: 100%; min-width: 100%; max-width: 100%; flex-basis: 100%; height: 250px; } .fitscheck .delivery-images img { height: 250px; } }

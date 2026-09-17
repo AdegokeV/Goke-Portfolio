@@ -1,0 +1,8 @@
+import React from "react";
+import "../styles/About.css";
+import FadeInSection from "./FadeInSection";
+const deliveryTools = ["Jira", "ClickUp", "Linear", "Trello", "Notion", "Slack", "Google Workspace", "Microsoft Office", "Figma", "Canva"];
+const dataTools = ["Python", "SQL", "pandas", "scikit-learn", "Streamlit", "Power BI", "Tableau"];
+const ToolList = ({ title, tools }) => <div className="tool-group"><p>{title}</p><ul className="tech-stack">{tools.map((tool, index) => <FadeInSection key={tool} delay={`${(index + 1) * 60}ms`}><li>{tool}</li></FadeInSection>)}</ul></div>;
+const About = () => <section id="about"><FadeInSection><div className="section-header"><span className="section-title">/ about me</span></div><div className="about-content"><div className="about-description"><p>I am currently looking for new opportunities where I can <b>bring structure to complex projects, align teams around clear outcomes, and deliver work from planning through completion.</b> Alongside project delivery, I am building my data-science skills and creating practical machine-learning models.</p><p>Previously, I worked at <b>ReconXi</b> and <b>FitsCheck</b>, coordinating product delivery, stakeholder communication, requirements, and quality across cross-functional teams.</p><p>Tools I have been working with:</p><ToolList title="Project delivery" tools={deliveryTools} /><ToolList title="Data science and analytics" tools={dataTools} /><p>In my free time, I like to read, cook, play games, volunteer, spend time with God, and follow financial markets.</p></div><div className="about-image"><img alt="Oluwatosin Adegoke" src="/assets/oluwatosin-portrait.jpg" /></div></div></FadeInSection></section>;
+export default About;
