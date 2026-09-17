@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Certifications.css";
 import FadeInSection from "./FadeInSection";
+import { ExternalLinkIcon } from "./BrandIcons";
 
 const credentials = [
   ["2025", "Associate in Project Management (CAPM)", "Project Management Institute", "https://drive.google.com/file/d/1Td1wyla3E8lIsawlXIUADADz66D2lMpj/view?usp=sharing"],
@@ -10,5 +11,5 @@ const credentials = [
   ["2023", "People and Soft Skills for Professionals", "IBM", "https://drive.google.com/file/d/12PJp1jeh7owJXIUcexHvAAsgi2lg3xJK/view?usp=sharing"],
   ["2022", "UX Researcher", "Google / Coursera", "https://drive.google.com/file/d/1NIh0GmjhLCk35Mua-tO_OdmX4hrcA_Fr/view?usp=sharing"],
 ];
-const Certifications = () => <section id="certifications"><FadeInSection><div className="section-header"><span className="section-title">/ certifications</span></div><div className="credentials-intro">A few credentials that support how I approach delivery, people, products, and data.</div><ul className="credentials-list">{credentials.map(([year, title, issuer, link], index) => <FadeInSection key={title} delay={`${(index + 1) * 80}ms`}><li><a href={link} target="_blank" rel="noreferrer"><span>{year}</span><div><strong>{title}</strong><em>{issuer}</em></div><b>↗</b></a></li></FadeInSection>)}</ul></FadeInSection></section>;
+const Certifications = () => <section id="certifications"><FadeInSection><div className="section-header"><span className="section-title">/ certifications</span></div><div className="credentials-intro">A few credentials that support how I approach delivery, people, products, and data.</div><ul className="credentials-list">{credentials.map(([year, title, issuer, link], index) => <FadeInSection key={title} delay={`${(index + 1) * 80}ms`}><li><a href={link} target="_blank" rel="noreferrer"><span>{year}</span><div><strong>{title}</strong><em>{issuer}</em></div><b><ExternalLinkIcon /></b></a></li></FadeInSection>)}</ul></FadeInSection></section>;
 export default Certifications;

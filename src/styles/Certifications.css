@@ -8,5 +8,6 @@
 .credentials-list strong, .credentials-list em { display: block; font-style: normal; }
 .credentials-list strong { font-size: 20px; }
 .credentials-list em { color: var(--slate); font-size: 16px; }
-.credentials-list b { color: var(--green-bright); font-size: 20px; }
+.credentials-list b { color: var(--green-bright); display: inline-flex; }
+.credentials-list .external-arrow { width: 18px; height: 18px; }
 @media (max-width: 800px) { #certifications { padding: 60px 0; } .credentials-list a { grid-template-columns: 45px 1fr 18px; gap: 8px; } .credentials-list strong { font-size: 17px; } .credentials-list em { font-size: 14px; } }

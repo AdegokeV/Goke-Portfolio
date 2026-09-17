@@ -33,7 +33,7 @@
 .project-preview img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: top center; transition: transform .35s ease, opacity .35s ease; }
 .preview-overlay { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: end; align-items: flex-start; padding: 18px; background: linear-gradient(to top, rgba(9,10,10,.94), rgba(9,10,10,.08) 70%); color: var(--white); opacity: 0; transition: opacity .25s ease; }
 .preview-overlay strong { font-size: 22px; }
-.preview-overlay em { color: var(--green-bright); font-size: 15px; font-style: normal; }
+.preview-overlay em { color: var(--green-bright); font-size: 15px; font-style: normal; display: inline-flex; align-items: center; gap: 5px; }
 .project-preview:hover img, .project-preview:focus img { transform: scale(1.04); opacity: .6; }
 .project-preview:hover .preview-overlay, .project-preview:focus .preview-overlay { opacity: 1; }
 
@@ -116,14 +116,15 @@
 .external-links { display: inline-flex; align-items: center; gap: 12px; color: var(--green-bright); }
 .github-icon { display: inline-flex; color: var(--green-bright); }
 .github-icon svg { width: 21px; height: 21px; }
-.live-link { color: var(--green-bright); border: 1px solid var(--green-bright); border-radius: 4px; padding: 4px 8px; font-size: 13px; line-height: 1.2; }
+.live-link { color: var(--green-bright); border: 1px solid var(--green-bright); border-radius: 4px; padding: 4px 8px; font-size: 13px; line-height: 1.2; display: inline-flex; align-items: center; gap: 5px; }
 .live-link:hover { background: var(--green-tint); color: var(--white); }
 
 .external-links { display: inline-flex; align-items: center; gap: 12px; color: var(--green-bright); }
 .github-icon { display: inline-flex; color: var(--green-bright); }
 .github-icon svg { width: 21px; height: 21px; }
-.live-link { color: var(--green-bright); border: 1px solid var(--green-bright); border-radius: 4px; padding: 4px 8px; font-size: 13px; line-height: 1.2; }
+.live-link { color: var(--green-bright); border: 1px solid var(--green-bright); border-radius: 4px; padding: 4px 8px; font-size: 13px; line-height: 1.2; display: inline-flex; align-items: center; gap: 5px; }
 .live-link:hover { background: var(--green-tint); color: var(--white); }
+.external-arrow { width: 14px; height: 14px; flex: 0 0 14px; }
 
 .card-title {
   font-family: "NTR", sans-serif;
