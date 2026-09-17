@@ -116,15 +116,15 @@
 .external-links { display: inline-flex; align-items: center; gap: 12px; color: var(--green-bright); }
 .github-icon { display: inline-flex; color: var(--green-bright); }
 .github-icon svg { width: 21px; height: 21px; }
-.live-link { color: var(--green-bright); border: 1px solid var(--green-bright); border-radius: 4px; padding: 4px 8px; font-size: 13px; line-height: 1.2; display: inline-flex; align-items: center; gap: 5px; }
+.live-link { color: var(--green-bright); border: 0; padding: 0; line-height: 1; display: inline-flex; align-items: center; }
 .live-link:hover { background: var(--green-tint); color: var(--white); }
 
 .external-links { display: inline-flex; align-items: center; gap: 12px; color: var(--green-bright); }
 .github-icon { display: inline-flex; color: var(--green-bright); }
 .github-icon svg { width: 21px; height: 21px; }
-.live-link { color: var(--green-bright); border: 1px solid var(--green-bright); border-radius: 4px; padding: 4px 8px; font-size: 13px; line-height: 1.2; display: inline-flex; align-items: center; gap: 5px; }
-.live-link:hover { background: var(--green-tint); color: var(--white); }
-.external-arrow { width: 14px; height: 14px; flex: 0 0 14px; }
+.live-link { color: var(--green-bright); border: 0; padding: 0; line-height: 1; display: inline-flex; align-items: center; }
+.live-link:hover { color: var(--white); }
+.external-arrow { width: 21px; height: 21px; flex: 0 0 21px; }
 
 .card-title {
   font-family: "NTR", sans-serif;
